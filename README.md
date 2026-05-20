@@ -25,7 +25,10 @@ The Python notebook utilized to build the linear regression benchmark model, cal
 ## Power BI Dashboard Walkthrough
 
 A short demo of the interactive Power BI dashboard is embedded below, highlighting the CSAT Impact, Transit Driver, and Customer Pain analysis pages.
-https://github.com/user-attachments/assets/da8af99d-b39d-4b7c-9d22-cf9e420751e4
+
+https://github.com/user-attachments/assets/db5676fd-4f6d-4f89-9ee3-fbeea181d67f
+
+
 
 
 
