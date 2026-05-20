@@ -18,14 +18,16 @@ Insights and recommendations are provided on the following key areas:
 
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
 
-**Power BI Interactive Dashboard Demo:**
-
-<img width="800" height="446" alt="ezgif-1f02305a11beb4fd" src="https://github.com/user-attachments/assets/04817465-9100-4320-9252-13f97ac6b3c3" />
-
-
 The regression benchmarking notebook used for model-adjusted carrier prioritization can be found [here](notebooks/02_linear_regression_model.ipynb).
 
 The dataset source and data usage notes can be found [here](data/README.md).
+
+**Power BI Interactive Dashboard Demo:**
+
+https://github.com/user-attachments/assets/da8af99d-b39d-4b7c-9d22-cf9e420751e4
+
+
+
 
 
 
