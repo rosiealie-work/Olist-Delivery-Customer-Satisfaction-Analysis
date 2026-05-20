@@ -1,20 +1,32 @@
 # An End-to-End Delivery Performance Analysis On Customer Satisfaction
 
-## Project Background
-Backround about the company, including the industry, active years, business model, and key business metrics. Explain this from the POV of a data analyst who is working at the company.
+# Project Background
+
+Olist is a Brazilian e-commerce marketplace that connects sellers, customers, and logistics partners across multiple regions. The company supports online sellers by providing marketplace infrastructure, order management, and delivery coordination for customer purchases.
+
+As Olist continues to handle a large volume of customer orders, delivery performance becomes a critical driver of customer satisfaction. Late deliveries, long carrier transit times, and missed delivery promises can negatively affect review scores and weaken the overall customer experience.
+
+The company has significant amounts of operational data on orders, products, sellers, customers, delivery timelines, freight, and customer reviews. This project thoroughly analyzes and synthesizes this data to uncover how delivery performance affects customer satisfaction and to identify where logistics improvements should be prioritized.
 
 Insights and recommendations are provided on the following key areas:
 
-- **Category 1:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+- **Customer Satisfaction Impact:** Evaluation of how delivery delays, lead time, and missed delivery promises affect customer review scores.
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
+- **Delivery Bottleneck Analysis:** Analysis of the order delivery journey across approval time, seller handling time, and carrier transit time to identify the main source of delivery delays.
 
-Targed SQL queries regarding various business questions can be found here [link].
+- **Order-Level Performance Analysis:** Assessment of how freight, weight, volume, product count, and seller count relate to delivery performance.
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+- **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
+
+- **Business Recommendations:** Practical recommendations to improve logistics operations, carrier monitoring, regional prioritization, and customer experience.
+
+Power BI dashboard screenshots can be found [here](dashboard-screenshots/).
+
+The data processing and exploratory analysis notebook can be found [here](notebooks/01_data_processing_eda.ipynb).
+
+The regression benchmarking notebook used for model-adjusted carrier prioritization can be found [here](notebooks/02_linear_regression_model.ipynb).
+
+The dataset source and data usage notes can be found [here](data/README.md).
 
 
 
