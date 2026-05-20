@@ -18,12 +18,13 @@ Insights and recommendations are provided on the following key areas:
 
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
 
-The regression benchmarking notebook used for model-adjusted carrier prioritization can be found [here](notebooks/02_linear_regression_model.ipynb).
+The Python notebook utilized to clean, validate, engineer features, and prepare the order-level master table for analysis can be found [here](notebooks/01_data_processing_eda.ipynb).
 
-The dataset source and data usage notes can be found [here](data/README.md).
+The Python notebook utilized to build the linear regression benchmark model, calculate model-adjusted carrier delay, and prepare the customer-state priority table for the dashboard can be found [here](notebooks/02_linear_regression_model.ipynb).
 
-**Power BI Interactive Dashboard Demo:**
+## Power BI Dashboard Walkthrough
 
+A short demo of the interactive Power BI dashboard is embedded below, highlighting the CSAT Impact, Transit Driver, and Customer Pain analysis pages.
 https://github.com/user-attachments/assets/da8af99d-b39d-4b7c-9d22-cf9e420751e4
 
 
