@@ -20,8 +20,8 @@ Insights and recommendations are provided on the following key areas:
 
 **Power BI Interactive Dashboard Demo:**
 
-<video src="https://github.com/user-attachments/assets/d20da058-ee9e-499d-a393-b670d2ec52f2" autoplay loop muted controls width="100%"></video>
-The data processing and exploratory analysis notebook can be found [here](notebooks/01_data_processing_eda.ipynb).
+<img width="800" height="446" alt="ezgif-1f02305a11beb4fd" src="https://github.com/user-attachments/assets/04817465-9100-4320-9252-13f97ac6b3c3" />
+
 
 The regression benchmarking notebook used for model-adjusted carrier prioritization can be found [here](notebooks/02_linear_regression_model.ipynb).
 
