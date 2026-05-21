@@ -6,7 +6,7 @@ Olist is a Brazilian e-commerce marketplace founded in 2015 that helps small and
 
 As Olist continues to handle a large volume of customer orders, delivery performance becomes a critical driver of customer satisfaction. Late deliveries, long carrier transit times, and missed delivery promises can negatively affect review scores and weaken the overall customer experience.
 
-For this reason, this project analyzes Olist’s order, product, seller, customer, delivery, freight, and review data to understand how delivery performance affects customer satisfaction and to identify where logistics improvements should be prioritized.
+For this reason, this project analyzes delivery timelines, promised delivery gaps, customer–seller geography, order complexity, product characteristics, and review outcomes to understand how delivery performance affects customer satisfaction and to identify where logistics improvements should be prioritized.
 
 Insights and recommendations are provided on the following key areas:
 
