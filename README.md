@@ -2,11 +2,11 @@
 
 # Project Background
 
-Olist is a Brazilian e-commerce marketplace that connects sellers, customers, and logistics partners across multiple regions. The company supports online sellers by providing marketplace infrastructure, order management, and delivery coordination for customer purchases.
+Olist is a Brazilian e-commerce marketplace founded in 2015 that helps small and medium-sized sellers reach customers through major online marketplaces, while supporting order management, marketplace operations, and delivery coordination.
 
 As Olist continues to handle a large volume of customer orders, delivery performance becomes a critical driver of customer satisfaction. Late deliveries, long carrier transit times, and missed delivery promises can negatively affect review scores and weaken the overall customer experience.
 
-The company has significant amounts of operational data on orders, products, sellers, customers, delivery timelines, freight, and customer reviews. This project thoroughly analyzes and synthesizes this data to uncover how delivery performance affects customer satisfaction and to identify where logistics improvements should be prioritized.
+For this reason, this project analyzes Olist’s order, product, seller, customer, delivery, freight, and review data to understand how delivery performance affects customer satisfaction and to identify where logistics improvements should be prioritized.
 
 Insights and recommendations are provided on the following key areas:
 
