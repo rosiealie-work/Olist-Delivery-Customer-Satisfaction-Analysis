@@ -18,9 +18,9 @@ Insights and recommendations are provided on the following key areas:
 
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
 
-The Python code for data cleaning, validation, feature engineering, EDA, and master table creation can be found [here](Olist Data Cleaning.ipynb).
+The Python code for data cleaning, validation, feature engineering, EDA, and master table creation can be found [here]([here](Olist%20Data%20Cleaning.ipynb).
 
-The Python code for linear regression benchmarking model and customer-state carrier prioritization can be found [here](notebooks/02_linear_regression_model.ipynb).
+The Python code for linear regression benchmarking model and customer-state carrier prioritization can be found [here](Olist%20Data%20Cleaning.ipynb).
 
 ## Power BI Dashboard Walkthrough
 
