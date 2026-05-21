@@ -18,9 +18,9 @@ Insights and recommendations are provided on the following key areas:
 
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
 
-The Python notebook utilized to clean, validate, engineer features, and prepare the order-level master table for analysis can be found [here](notebooks/01_data_processing_eda.ipynb).
+The Python code used for data cleaning, validation, feature engineering, EDA, and final master table construction can be found [here](notebooks/01_data_processing_eda.ipynb).
 
-The Python notebook utilized to build the linear regression benchmark model, calculate model-adjusted carrier delay, and prepare the customer-state priority table for the dashboard can be found [here](notebooks/02_linear_regression_model.ipynb).
+The Python code used to build the linear regression benchmark model and model-adjusted customer-state carrier priority analysis can be found [here](notebooks/02_linear_regression_model.ipynb).
 
 ## Power BI Dashboard Walkthrough
 
