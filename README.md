@@ -20,7 +20,7 @@ Insights and recommendations are provided on the following key areas:
 
 The Python code for data cleaning, validation, feature engineering, EDA, and master table creation can be found [here](01_data_processing_eda.ipynb).
 
-The Python code for linear regression benchmarking model and customer-state carrier prioritization can be found [here](02_linear_regression_benchmark).
+The Python code for linear regression benchmarking model can be found [here](02_linear_regression_benchmark).
 
 ## Power BI Dashboard Walkthrough
 
