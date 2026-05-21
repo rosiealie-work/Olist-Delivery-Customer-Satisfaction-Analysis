@@ -18,7 +18,7 @@ Insights and recommendations are provided on the following key areas:
 
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
 
-The Python code used for data cleaning, validation, feature engineering, EDA, and final master table can be found [here](notebooks/01_data_processing_eda.ipynb).
+The Python code used for data cleaning, validation, feature engineering, EDA, and creating the final master table can be found [here](notebooks/01_data_processing_eda.ipynb).
 
 The Python code used to build the linear regression benchmark model and customer-state carrier prioritization can be found [here](notebooks/02_linear_regression_model.ipynb).
 
