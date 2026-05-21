@@ -24,7 +24,7 @@ The Python code for linear regression benchmarking model and customer-state carr
 
 ## Power BI Dashboard Walkthrough
 
-A short demo of the interactive Power BI dashboard is embedded below, highlighting the CSAT Impact, Transit Driver, and Customer Pain analysis pages.
+A short demo of the interactive Power BI dashboard, highlighting the CSAT Impact, Transit Driver, and Customer Pain analysis pages.
 
 https://github.com/user-attachments/assets/73b8dbc1-788d-47d9-bcf3-4736414449d0
 
