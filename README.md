@@ -26,7 +26,8 @@ The Python code for linear regression benchmarking model can be found [here](02_
 
 A short demo of the interactive Power BI dashboard, highlighting the CSAT Impact, Transit Driver, and Customer Pain analysis pages.
 
-https://github.com/user-attachments/assets/73b8dbc1-788d-47d9-bcf3-4736414449d0
+https://github.com/user-attachments/assets/d52ec6c1-b8ed-4328-8a60-20529d253e73
+
 
 
 
