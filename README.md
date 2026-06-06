@@ -20,6 +20,8 @@ The Python code for data cleaning, validation, feature engineering, and EDA can 
 
 The Python code for linear regression benchmarking model can be found [here](02_linear_regression_benchmark.ipynb).
 
+The Power BI template (`.pbit`) file for this dashboard can be downloaded and explored [here](03_olist_powerbi_dashboard.pbit).
+
 ## Power BI Dashboard Walkthrough
 
 A short demo of the interactive Power BI dashboard, highlighting the CSAT Impact, Transit Driver, and Customer Pain analysis pages.
