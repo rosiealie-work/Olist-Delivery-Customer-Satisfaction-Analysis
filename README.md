@@ -1,4 +1,4 @@
-# Olist Delivery Performance and Customer Satisfaction Analysis
+<img width="1415" height="773" alt="Ảnh chụp màn hình 2026-06-06 163748" src="https://github.com/user-attachments/assets/4d06e08c-1365-4172-a9b5-1e6a4209b6b3" /># Olist Delivery Performance and Customer Satisfaction Analysis
 
 # Project Background
 
@@ -55,7 +55,8 @@ The companies main database structure as seen below consists of four tables: tab
 
 Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
+<img width="1415" height="773" alt="Ảnh chụp màn hình 2026-06-06 163748" src="https://github.com/user-attachments/assets/bae2a945-3782-4be6-b422-b9805a61616a" />
+
 
 
 
