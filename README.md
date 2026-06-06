@@ -1,5 +1,3 @@
-<img width="1415" height="773" alt="Ảnh chụp màn hình 2026-06-06 163748" src="https://github.com/user-attachments/assets/4d06e08c-1365-4172-a9b5-1e6a4209b6b3" /># Olist Delivery Performance and Customer Satisfaction Analysis
-
 # Project Background
 
 Olist is a Brazilian e-commerce marketplace founded in 2015 that helps small and medium-sized sellers reach customers through major online marketplaces, while supporting order management, marketplace operations, and delivery coordination.
