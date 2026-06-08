@@ -71,7 +71,8 @@ Below is the overview page from Power BI. The next two dashboard pages further b
   
 * **Carrier transit is not treated as the sole root cause here.** It is the strongest stage-level risk signal and will be further validated through model-adjusted analysis to separate carrier underperformance from distance, region, order complexity, and upstream seller delays.
 
-<img width="1128" height="620" alt="Ảnh chụp màn hình 2026-06-08 101113" src="https://github.com/user-attachments/assets/d651f116-ddf7-45fd-993a-b267d2c70d5c" />
+<img width="1438" height="786" alt="Ảnh chụp màn hình 2026-06-08 214549" src="https://github.com/user-attachments/assets/11e8bdd3-3987-4312-885c-d499356eb495" />
+
 
 
 ## Category 2:
