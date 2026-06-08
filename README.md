@@ -14,11 +14,11 @@ Insights and recommendations are provided on the following key areas:
 
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
 
-The Python code for data cleaning, validation, feature engineering, and EDA can be found [here](01_data_processing_eda.ipynb).
+The Python code for data cleaning, validation, feature engineering, and EDA can be found **[here]**(01_data_processing_eda.ipynb).
 
-The Python code for linear regression benchmarking model can be found [here](02_linear_regression_benchmark.ipynb).
+The Python code for linear regression benchmarking model can be found **[here]**(02_linear_regression_benchmark.ipynb).
 
-The entire Power BI dashboard file can be downloaded and explored [here](03_olist_powerbi_dashboard.pbit).
+The entire Power BI dashboard file can be downloaded and explored **[here]**(03_olist_powerbi_dashboard.pbit).
 
 ## Power BI Dashboard Walkthrough
 
@@ -134,7 +134,8 @@ Based on the insights and findings above, we would recommend the [stakeholder te
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* **Assumption 1: Late-rate lift is a diagnostic signal, not a causal claim.** The lift chart compares the late-rate gap between the slowest 25% and fastest 25% of orders within each delivery stage. Carrier Transit shows the largest unadjusted lift, making it the strongest stage-level warning signal for late-delivery risk. However, this does not prove that carrier transit is the sole root cause. Long transit time may also be driven by route distance, regional complexity, order characteristics, promise-date design, or upstream seller delays. For this reason, the lift chart is used to prioritize deeper investigation, while Dashboard 3 uses model-adjusted residuals to separate expected long transit from abnormal carrier delay.
+* **Assumption 1: Late-rate lift is a diagnostic signal, not a causal claim.**
+  The lift chart compares the late-rate gap between the slowest 25% and fastest 25% of orders within each delivery stage. Carrier Transit shows the largest unadjusted lift, making it the strongest stage-level warning signal for late-delivery risk. However, this does not prove that carrier transit is the sole root cause. Long transit time may also be driven by route distance, regional complexity, order characteristics, promise-date design, or upstream seller delays. For this reason, the lift chart is used to prioritize deeper investigation, while Dashboard 3 uses model-adjusted residuals to separate expected long transit from abnormal carrier delay.
   
 * Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
   
