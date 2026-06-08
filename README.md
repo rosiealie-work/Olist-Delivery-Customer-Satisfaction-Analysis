@@ -51,7 +51,7 @@ The companies main database structure as seen below consists of four tables: tab
 
 ### Overview of Findings
 
-**Late delivery materially damages customer satisfaction**, making delivery performance the key operational driver behind negative customer experience in this project. Across **94.4K delivered orders**, overall CSAT remains relatively healthy with an **average review score of 4.15** and a **late rate of 8.08%**. However, once an order misses the promised delivery date, the average review score drops from **4.29 for not-late orders** to **2.56 for late orders**, creating a **1.73-point CSAT penalty**. The time trend reinforces this relationship, as **2018 Q1–Q2 show the weakest CSAT period alongside the highest late-rate levels**. 
+**Late delivery materially damages customer satisfaction**, making delivery performance the key operational driver behind negative customer experience in this project. Across **94.4K delivered orders**, overall CSAT remains relatively healthy with an **average review score of 4.15** and a **late rate of 8.08%**. However, once an order misses the promised delivery date, the average review score drops from **4.29 for not-late orders** to **2.56 for late orders**, creating a **1.73-point CSAT penalty**. The time trend reinforces this relationship, as **2018 Q1–Q2** show the weakest CSAT period alongside the highest late-rate levels. 
 
 Below is the overview page from Power BI. The next two dashboard pages further break down the main delivery-performance factors behind late orders and identify which states experience the most severe delivery-related customer pain.
 
@@ -63,9 +63,9 @@ Below is the overview page from Power BI. The next two dashboard pages further b
 # Insights Deep Dive
 ## Transit Driver Insights
 
-* **Among the three delivery stages, carrier transit is the strongest unadjusted delivery-stage signal associated with late orders.** Orders in the slowest carrier-transit quartile have a 24.0 percentage-point higher late rate than those in the fastest quartile, far above seller handling (9.4 pp) and order approval (2.7 pp). This suggests that reducing long carrier transit times should be the first operational priority for lowering late deliveries.
+* **Among the three delivery stages, carrier transit is the strongest unadjusted delivery-stage signal associated with late orders.** Orders in the slowest carrier-transit quartile have a **24.0 percentage-point** higher late rate than those in the fastest quartile, far above seller handling (**9.4 pp**) and order approval (**2.7 pp**). This suggests that reducing long carrier transit times should be the first operational priority for lowering late deliveries.
   
-* **Late orders show a much larger median delay during carrier transit than in earlier delivery stages.** The median carrier-transit gap between late and not-late orders is 16.94 days, compared with only 1.24 days for seller handling and a minimal gap for order approval. This suggests that the strongest observable delay pattern occurs after seller handoff, making carrier transit the key operational stage to investigate further.
+* **Late orders show a much larger median delay during carrier transit than in earlier delivery stages.** The median carrier-transit gap between late and not-late orders is **16.94 days**, compared with only **1.24 days** for seller handling and a minimal gap for order approval. This suggests that the strongest observable delay pattern occurs after seller handoff, making carrier transit the key operational stage to investigate further.
   
 * **Late-delivery risk also escalates sharply once carrier transit becomes prolonged.** Across shorter transit buckets, late rate remains relatively low and stable, but it rises steeply for orders taking more than 19 days in transit. This indicates that long in-transit orders should be flagged earlier as high-risk cases, especially before they breach the promised delivery date and negatively affect customer satisfaction.
   
