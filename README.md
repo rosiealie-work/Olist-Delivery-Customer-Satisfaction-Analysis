@@ -65,7 +65,7 @@ Below is the overview page from Power BI, and the next two dashboard pages furth
 # Insights Deep Dive
 ## Transit Driver Insights
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* Among the three delivery stages, carrier transit is the strongest unadjusted delivery-stage signal associated with late orders. Orders in the slowest carrier-transit quartile have a 24.0 percentage-point higher late rate than those in the fastest quartile, far above seller handling (9.4 pp) and order approval (2.7 pp). This suggests that reducing long carrier transit times should be the first operational priority for lowering late deliveries.
   
 * **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
