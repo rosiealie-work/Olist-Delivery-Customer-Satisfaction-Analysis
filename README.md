@@ -53,7 +53,10 @@ The companies main database structure as seen below consists of four tables: tab
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+Late delivery materially damages customer satisfaction, making delivery performance the key operational driver behind negative customer experience in this project. Overall CSAT remains healthy across 94.4K delivered orders, with an average review score of 4.15 and a late rate of 8.08%, but once an order misses the promised delivery date, the average review score drops from 4.29 for not-late orders to 2.56 for late orders, creating a 1.73-point CSAT penalty. The time trend reinforces this pattern, as 2018 Q1–Q2 show the weakest CSAT period alongside the highest late-rate levels.
+Therefore, the core finding is that late delivery materially damages customer satisfaction, and the next two dashboard pages will explain which delivery-performance factors drive late orders and which states face the most severe customer pain.
+
+Below is the overview page from Power BI, and the next two dashboard pages further break down the main delivery-performance factors behind late orders and identify which states experience the most severe delivery-related customer pain.
 
 <img width="1415" height="773" alt="Ảnh chụp màn hình 2026-06-06 163748" src="https://github.com/user-attachments/assets/bae2a945-3782-4be6-b422-b9805a61616a" />
 
