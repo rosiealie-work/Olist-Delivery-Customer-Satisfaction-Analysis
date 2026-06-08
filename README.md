@@ -53,8 +53,7 @@ The companies main database structure as seen below consists of four tables: tab
 
 ### Overview of Findings
 
-Late delivery materially damages customer satisfaction, making delivery performance the key operational driver behind negative customer experience in this project. Overall CSAT remains healthy across 94.4K delivered orders, with an average review score of 4.15 and a late rate of 8.08%, but once an order misses the promised delivery date, the average review score drops from 4.29 for not-late orders to 2.56 for late orders, creating a 1.73-point CSAT penalty. The time trend reinforces this pattern, as 2018 Q1–Q2 show the weakest CSAT period alongside the highest late-rate levels.
-Therefore, the core finding is that late delivery materially damages customer satisfaction, and the next two dashboard pages will explain which delivery-performance factors drive late orders and which states face the most severe customer pain.
+Late delivery materially damages customer satisfaction, making delivery performance the key operational driver behind negative customer experience in this project. Specifically, CSAT remains healthy overall across 94.4K delivered orders, with an average review score of 4.15 and a late rate of 8.08%, but once an order misses the promised delivery date, the average review score drops from 4.29 for not-late orders to 2.56 for late orders, creating a 1.73-point CSAT penalty. The time trend reinforces this relationship, as 2018 Q1–Q2 show the weakest CSAT period alongside the highest late-rate levels.
 
 Below is the overview page from Power BI, and the next two dashboard pages further break down the main delivery-performance factors behind late orders and identify which states experience the most severe delivery-related customer pain.
 
