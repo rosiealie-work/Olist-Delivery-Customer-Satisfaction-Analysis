@@ -74,7 +74,7 @@ Below is the overview page from Power BI, and the next two dashboard pages furth
 <img width="1128" height="620" alt="Ảnh chụp màn hình 2026-06-08 101113" src="https://github.com/user-attachments/assets/d651f116-ddf7-45fd-993a-b267d2c70d5c" />
 
 
-### Category 2:
+## Category 2:
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
