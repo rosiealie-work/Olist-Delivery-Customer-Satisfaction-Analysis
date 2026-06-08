@@ -67,12 +67,12 @@ Below is the overview page from Power BI, and the next two dashboard pages furth
 
 * Among the three delivery stages, carrier transit is the strongest unadjusted delivery-stage signal associated with late orders. Orders in the slowest carrier-transit quartile have a 24.0 percentage-point higher late rate than those in the fastest quartile, far above seller handling (9.4 pp) and order approval (2.7 pp). This suggests that reducing long carrier transit times should be the first operational priority for lowering late deliveries.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* Late orders show a much larger median delay during carrier transit than in earlier delivery stages. The median carrier-transit gap between late and not-late orders is 16.94 days, compared with only 1.24 days for seller handling and a minimal gap for order approval. This suggests that the strongest observable delay pattern occurs after seller handoff, making carrier transit the key operational stage to investigate further.
   
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* Late-delivery risk also escalates sharply once carrier transit becomes prolonged. Across shorter transit buckets, late rate remains relatively low and stable, but it rises steeply for orders taking more than 19 days in transit. This indicates that long in-transit orders should be flagged earlier as high-risk cases, especially before they breach the promised delivery date and negatively affect customer satisfaction.
   
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-* 
+* Carrier transit is not treated as the sole root cause here. It is the strongest stage-level risk signal and will be further validated through model-adjusted analysis to separate carrier underperformance from distance, region, order complexity, and upstream seller delays.
+
 <img width="1128" height="620" alt="Ảnh chụp màn hình 2026-06-08 101113" src="https://github.com/user-attachments/assets/d651f116-ddf7-45fd-993a-b267d2c70d5c" />
 
 
