@@ -69,7 +69,7 @@ Below is the overview page from Power BI. The next two dashboard pages further b
   
 * **Late-delivery risk also escalates sharply once carrier transit becomes prolonged.** Across shorter transit buckets, late rate remains relatively low and stable, but it rises steeply for orders taking more than 19 days in transit. This indicates that long in-transit orders should be flagged earlier as high-risk cases, especially before they breach the promised delivery date and negatively affect customer satisfaction.
   
-* **Carrier transit is not treated as the sole root cause here.** It is the strongest stage-level risk signal and will be further validated through model-adjusted analysis to separate carrier underperformance from distance, region, order complexity, and upstream seller delays.
+* **Note:** Carrier transit is not treated as the sole root cause here. It is the strongest stage-level risk signal and will be further validated through model-adjusted analysis to separate carrier underperformance from distance, region, order complexity, and upstream seller delays.
 
 <img width="1438" height="786" alt="Ảnh chụp màn hình 2026-06-08 214549" src="https://github.com/user-attachments/assets/11e8bdd3-3987-4312-885c-d499356eb495" />
 
@@ -77,13 +77,13 @@ Below is the overview page from Power BI. The next two dashboard pages further b
 
 ## Customer Pain Insights:
 
-* **The highest number of late orders does not automatically mean the worst carrier issue**. São Paulo has the largest number of late orders (**2,251**), but its median residual is negative (**-0.7 days**). This means that although São Paulo contributes the most late orders by volume, its carrier transit time is not worse than expected after model adjustment. For this reason, São Paulo is classified as a **High-Volume Watch** market rather than a carrier delay hotspot. The issue here is mainly scale-driven, so the business action should focus on capacity monitoring and SLA control, not necessarily carrier underperformance investigation.
+**How to read this dashboard:** A linear regression benchmark is used to estimate the expected carrier transit time for each order. The model-adjusted residual is calculated as **Actual carrier transit days − Expected carrier transit days**, where a positive median residual means deliveries in that customer state take longer than expected after adjustment. To prioritize action, **Delay Burden = Late Orders × Positive Median Residual**, and the **Priority Type** is assigned using Power BI rule-based segmentation that combines order volume, late-order volume, residual severity, and delay burden.
+
+* **Carrier Delay Hotspots are states with both excess transit time and meaningful delay burden.** The dashboard identifies **2 Carrier Delay Hotspots**: **Alagoas** and **Bahia**. These states combine positive model-adjusted residuals with enough late-order burden to require deeper operational review. Alagoas has a high median residual of **+5.7 days** and a late rate of **23.4%**, while Bahia has a lower residual (**+1.8 days**) but much larger order volume and delay burden. This suggests that hotspot detection should consider both severity and scale, not residual alone.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Rio de Janeiro has the largest delay burden, making it a major operational priority.** Rio de Janeiro has the highest delay burden (**1,558**) with **1,558 late orders** and a positive median residual of **+1.0 day**. Although its residual is not high enough to be classified as a Carrier Delay Hotspot, the combination of high late volume and positive excess transit time makes it a **Volume-Driven Delay Risk**. This indicates that Rio de Janeiro should be prioritized for operational improvement because even a moderate excess transit delay can create a large customer impact when applied to many late orders.
+
+* **High residual alone is not enough when sample size and late-order volume are low.** Amazonas has the highest carrier issue residual (**+7.6 days**), but it has only **138 total orders** and **5 late orders**, resulting in a much smaller delay burden. Because the issue is severe but limited in scale, it is classified as **Moderate Priority** rather than a top hotspot. This prevents the business from overreacting to small-sample states and keeps the prioritization focused on regions where excess transit time creates meaningful customer pain.
 
 <img width="1438" height="785" alt="Ảnh chụp màn hình 2026-06-08 214314" src="https://github.com/user-attachments/assets/48b11677-08e0-4c75-b44b-043214bd7ffa" />
 
