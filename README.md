@@ -75,11 +75,9 @@ Below is the overview page from Power BI. The next two dashboard pages further b
 
 
 
-## Category 2:
+## Customer Pain Insights:
 
-* Late delivery creates a clear customer satisfaction penalty
-
-Orders delivered after the promised date show a much weaker customer experience than on-time orders. Late orders have an average review score of **2.56**, compared with **4.29** for not-late orders, creating a **1.73-point CSAT gap**. The rating distribution also shifts sharply toward dissatisfaction: **54.1% of late orders receive 1–2 stars**, compared with only **9.2% among not-late orders**. This suggests that delivery reliability is not just an operational metric, but a direct driver of negative customer feedback.
+* **The highest number of late orders does not automatically mean the worst carrier issue**. São Paulo has the largest number of late orders (**2,251**), but its median residual is negative (**-0.7 days**). This means that although São Paulo contributes the most late orders by volume, its carrier transit time is not worse than expected after model adjustment. For this reason, São Paulo is classified as a **High-Volume Watch** market rather than a carrier delay hotspot. The issue here is mainly scale-driven, so the business action should focus on capacity monitoring and SLA control, not necessarily carrier underperformance investigation.
   
 * **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
