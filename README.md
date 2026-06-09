@@ -75,7 +75,7 @@ Below is the overview page from Power BI. The next two dashboard pages further b
 
 
 
-## Customer Pain Insights:
+## Customer Pain Insights
 
 **How to read this dashboard:** A linear regression benchmark is used to estimate the expected carrier transit time for each order. The model-adjusted residual is calculated as **Actual carrier transit days − Expected carrier transit days**, where a positive median residual means deliveries in that customer state take longer than expected after adjustment. To prioritize action, **Delay Burden = Late Orders × Positive Median Residual**, and the **Priority Type** is assigned using Power BI rule-based segmentation that combines order volume, late-order volume, residual severity, and delay burden.
 
