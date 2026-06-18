@@ -12,7 +12,7 @@ Insights and recommendations are provided on the following key areas:
 
 - **Delivery Bottleneck Analysis:** Analysis of the order delivery journey across approval time, seller handling time, and carrier transit time to identify the main source of delivery delays.
 
-- **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, and model-adjusted carrier delay.
+- **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, model-adjusted carrier delay residual, and delay burden.
 
 The Python code for data cleaning, validation, feature engineering, and EDA can be found **[here](01_data_processing_eda.ipynb).**
 
