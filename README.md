@@ -63,7 +63,7 @@ Below is the overview page from Power BI. The next two dashboard pages further b
 # Insights Deep Dive
 ## Transit Driver Insights
 
-* **Among the three delivery stages, carrier transit is the strongest unadjusted delivery-stage signal associated with late orders.** Orders in the slowest carrier-transit quartile have a **24.0 percentage-point** higher late rate than those in the fastest quartile, far above seller handling (**9.4 pp**) and order approval (**2.7 pp**). This suggests that reducing long carrier transit times should be the first operational priority for lowering late deliveries.
+* **Among the three delivery stages, carrier transit is the strongest unadjusted delivery-stage signal associated with late orders.** Orders in the slowest carrier-transit quartile have a **24.0 percentage-point** higher late rate than those in the fastest quartile, far above seller handling (**9.4 pp**) and order approval (**2.7 pp**). This suggests that reducing long carrier transit times should be the first operational priority for lowering late deliveries, but not necessarily the only root cause..
   
 * **Late orders show a much larger median delay during carrier transit than in earlier delivery stages.** The median carrier-transit gap between late and not-late orders is **16.94 days**, compared with only **1.24 days** for seller handling and a minimal gap for order approval. This suggests that the strongest observable delay pattern occurs after seller handoff, making carrier transit the key operational stage to investigate further.
   
