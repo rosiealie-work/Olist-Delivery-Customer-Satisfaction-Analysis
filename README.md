@@ -51,7 +51,7 @@ The companies main database structure as seen below consists of four tables: tab
 
 ### Overview of Findings
 
-**Late delivery materially damages customer satisfaction**, making delivery performance the key operational driver behind negative customer experience in this project. Across **94.4K** delivered orders, overall CSAT remains relatively healthy with an average review score of **4.15** and a late rate of **8.08%**. However, once an order misses the promised delivery date, the average review score drops from **4.29** for not-late orders to **2.56** for late orders, creating a **1.73-point CSAT penalty**. The time trend reinforces this relationship, as **2018 Q1–Q2** show the weakest CSAT period alongside the highest late-rate levels. 
+Across **94.4K** delivered orders with valid timestamps and review scores, Olist maintains a healthy average review score of **4.15**. However, **customer satisfaction drops sharply when orders miss the promised delivery date**. Late orders receive an average review score of **2.56**, compared with **4.29** for not-late orders, creating a **1.73-point** CSAT penalty. The main delivery-stage signal behind late orders is **carrier transit**, where the slowest orders show a much larger late-rate lift than seller handling or order approval. After adjusting carrier transit time for distance, package characteristics, timing, and seller state, the highest-priority customer pain is concentrated in specific states such as **Alagoas, Bahia, and Rio de Janeiro**.
 
 Below is the overview page from Power BI. The next two dashboard pages further break down the main delivery-performance factors behind late orders and identify which states experience the most severe delivery-related customer pain.
 
