@@ -2,7 +2,7 @@
 
 Olist is a Brazilian e-commerce marketplace founded in 2015 that helps small and medium-sized sellers reach customers through major online marketplaces, while supporting order management, marketplace operations, and delivery coordination.
 
-As Olist continues to handle a large volume of customer orders, delivery performance becomes a critical driver of customer satisfaction. Late deliveries, long carrier transit times, and missed delivery promises can negatively affect review scores and weaken the overall customer experience.
+In marketplace operations, delivery performance is a critical driver of customer satisfaction. Late deliveries, long carrier transit times, and missed delivery promises can negatively affect review scores and weaken the overall customer experience.
 
 For this reason, this project analyzes delivery timelines, promised delivery gaps, customer–seller geography, order complexity, product characteristics, and review outcomes to understand how delivery performance affects customer satisfaction and to identify where logistics improvements should be prioritized.
 
@@ -10,8 +10,8 @@ Insights and recommendations are provided on the following key areas:
 
 - **Customer Satisfaction Impact:** Evaluation of how delivery delays, lead time, and missed delivery promises affect customer review scores.
 
-- **Delivery Bottleneck Analysis:** Analysis of the order delivery journey across approval time, seller handling time, and carrier transit time to identify the main source of delivery delays.
-
+- **Delivery Stage & Carrier Transit Bottleneck Analysis:** Analysis of the order delivery journey across approval time, seller handling time, and carrier transit time to identify which stage is most strongly associated with late deliveries.
+  
 - **Regional Customer Pain Analysis:** Evaluation of late-delivery pain by customer state, focusing on late order volume, late rate, model-adjusted carrier delay residual, and delay burden.
 
 The Python code for data cleaning, validation, feature engineering, and EDA can be found **[here](01_data_processing_eda.ipynb).**
