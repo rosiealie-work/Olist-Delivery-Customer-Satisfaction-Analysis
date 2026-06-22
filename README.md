@@ -93,18 +93,17 @@ Below is the overview page from Power BI. The next two dashboard pages further b
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we would recommend the Logistics, Operations, and Customer Experience teams to consider the following: 
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **Build an early-warning workflow for orders at risk of missing the promised delivery date.** Since late delivery is strongly associated with lower customer satisfaction, Olist should flag high-risk orders before they breach the estimated delivery date. Priority should be given to orders with unusually long carrier transit time, orders approaching the promised date, and orders shipped through historically delayed state routes. Once flagged, these orders can be escalated for carrier follow-up, proactive customer communication, or service recovery actions.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **Create a carrier transit performance scorecard for ongoing operational monitoring.** Carrier transit is the strongest delivery-stage signal in this analysis, so it should be monitored separately from order approval and seller handling. The scorecard should track late rate, median carrier transit days, p75/p90 transit time, model-adjusted residual, and delay burden by customer state, seller state, and delivery route. This would help the operations team identify whether delays are broad-based, route-specific, or concentrated in a few high-risk regions.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **Prioritize root-cause investigation in Carrier Delay Hotspot states.** Alagoas and Bahia should be reviewed first because they show both excess carrier transit time and meaningful delay burden after model adjustment. The investigation should focus on route coverage, carrier SLA compliance, handoff quality after seller dispatch, regional infrastructure constraints, and whether alternative carrier allocation or different delivery promises are needed for these states.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **Apply a volume-driven improvement playbook to states with high delay burden.** States such as Rio de Janeiro should receive strong operational attention because even moderate excess carrier delay can create large customer impact when applied to many late orders. The priority should be to reduce delay at scale through carrier capacity planning, SLA enforcement, route-level monitoring, fulfillment cut-off review, and targeted escalation for orders approaching the promised delivery date.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
+* **Manage High-Volume Watch states through monitoring rather than carrier underperformance investigation.** States such as São Paulo or Minas Gerais generate a large number of late orders mainly because of order volume, but their model-adjusted residual does not indicate worse-than-expected carrier transit performance. These markets should be managed through peak-period monitoring, promise-date control, capacity buffers, and SLA governance, rather than immediate deep-dive investigations into carrier failure.
 
 
 # Assumptions and Caveats:
