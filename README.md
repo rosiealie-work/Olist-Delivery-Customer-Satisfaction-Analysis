@@ -108,12 +108,57 @@ Based on the insights and findings above, we would recommend the Logistics, Oper
 
 # Assumptions and Caveats:
 
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+Throughout the analysis, several assumptions were made to keep the dataset methodologically consistent and the business interpretation reliable. These assumptions and caveats are noted below:
 
-* **Assumption 1: Late-rate lift is a diagnostic signal, not a causal claim.**
+  
+* **Assumption 1: The final analytical sample includes only delivered orders with valid timestamps and available review scores.**
 
-  The lift chart compares the late-rate gap between the slowest 25% and fastest 25% of orders within each delivery stage. Carrier Transit shows the largest unadjusted lift, making it the strongest stage-level warning signal for late-delivery risk. However, this does not prove that carrier transit is the sole root cause. Long transit time may also be driven by route distance, regional complexity, order characteristics, promise-date design, or upstream seller delays. For this reason, the lift chart is used to prioritize deeper investigation, while Dashboard 3 uses model-adjusted residuals to separate expected long transit from abnormal carrier delay.
+  This project focuses on completed delivery outcomes, so only delivered orders are included in the final analysis. Orders with missing review scores are excluded because customer satisfaction is measured using the final order-level review score. Orders with invalid timestamp logic are also removed because negative or impossible delivery-stage durations would make lead time, seller handling time, carrier transit time, and promise gap unreliable. As a result, the dashboard should be interpreted as an analysis of completed, reviewable, timestamp-valid delivered orders, not all orders in the raw Olist dataset.
+
+* **Assumption 2: The order is the main unit of analysis.**
+
+  Delivery timestamps in the Olist dataset describe the overall delivery journey of an order, not separate item-level shipments. Therefore, item, product, seller, price, freight, weight, and volume information is aggregated to one row per order. These features describe the overall size, value, and operational complexity of the order, but they should not be interpreted as proof that a specific product, seller, or item caused a delay.
+
+* **Assumption 3: The latest review is treated as the final order-level customer satisfaction outcome.**
+
+  Some orders have multiple review records, but the review dataset does not reliably map each review to a specific item-level delivery event. Since delivery performance is measured at the order level, this project keeps only the most recent review for each order_id based on review_answer_timestamp. The latest review_score is used as the final customer satisfaction measure for the complete order. This keeps the review data aligned with the order-level delivery grain, but it means earlier customer feedback for the same order is not separately analyzed.
+
+* **Assumption 4: Late delivery is defined by missed delivery promise, not simply long delivery duration.**
+
+ The late_flag is defined as promise_gap_day > 0, where promise_gap_day = actual delivered customer date - estimated delivery date. This means an order is considered late only when it arrives after the promised delivery date. Long lead time alone is not classified as late if the order still arrives within the estimated delivery promise. This definition is appropriate for customer satisfaction analysis because customers are more likely to react to missed promises than to delivery duration in isolation. 
+
+* **Assumption 5: Geographic distance is an approximate proxy for delivery complexity.**
+
+  The regression model uses estimated seller-to-customer distance based on available geolocation data and the Haversine formula. This distance is useful for adjusting expected carrier transit time, but it is not the same as actual road distance, delivery route distance, number of logistics hubs, or real carrier network complexity. Therefore, distance-adjusted residuals should be interpreted as an improved benchmark, not a perfect representation of the true logistics path.
+
+* **Assumption 6: The linear regression model is used for benchmarking, not causal inference or production-grade prediction.**
+
+  The model estimates expected carrier transit days based on distance, package characteristics, order timing, and seller state. The purpose is to create a fair benchmark for identifying states where carrier transit is slower than expected. The residuals should not be interpreted as causal proof that the carrier alone caused the delay. The model helps compare performance after adjustment, but unobserved factors such as carrier identity, route capacity, weather, holidays, warehouse constraints, or local infrastructure may still affect delivery time.
+
+* **Assumption 7: The model-adjusted Customer Pain analysis is based on homogeneous orders.**
+
+  The regression benchmark focuses on homogeneous orders, which contain one seller and one product type. This reduces aggregation bias because the delivery outcome is directly linked to one seller-product-carrier flow. Complex orders are excluded from the modeling layer because the dataset does not reveal which seller, product, or shipment component caused the delay. Therefore, the Customer Pain residual analysis is best interpreted as a cleaner benchmark for simpler order structures, not as a complete explanation of every complex order.
   
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+* **Assumption 8: Outliers are retained because extreme delivery cases may represent real operational pain.**
+
+  Extreme carrier transit times, long distances, heavy packages, and large-volume orders are not automatically removed or capped. They may represent valid operational cases that the business should understand. However, these extreme cases can create a long-tailed residual distribution and make the model less precise for very difficult or unusually delayed orders. For this reason, the dashboard emphasizes median residuals and delay burden rather than relying only on mean-based metrics.
+
+* **Assumption 9: The selected OLS log-target model is optimized for residual benchmarking, not for minimizing every prediction error metric.**
+
+  The final model uses an OLS regression fitted on log1p(carrier_transit_time_day) and converts predictions back to day scale. No smearing correction is applied because the dashboard focuses on median residual benchmarking rather than mean-level prediction. This choice is appropriate for identifying states where a typical order is slower than expected, but it may understate or overstate expected transit time for some individual orders.
+
+* **Assumption 10: Late-rate lift is a diagnostic signal, not a causal claim.**
+
+  The lift chart compares the late-rate gap between the slowest 25% and fastest 25% of orders within each delivery stage. Carrier Transit shows the largest unadjusted lift, making it the strongest stage-level warning signal for late-delivery risk. However, this does not prove that carrier transit is the sole root cause. Long transit time may also be driven by route distance, regional complexity, order characteristics, promise-date design, or upstream seller delays. For this reason, the lift chart is used to prioritize deeper investigation, while the Customer Pain analysis uses model-adjusted residuals to separate expected long transit from abnormal carrier delay.
+
+* **Assumption 11: Priority Type is a rule-based segmentation framework.**
+
+  The Customer Pain priority labels are created using business rules that combine order volume, late-order volume, late rate, model-adjusted residual severity, and delay burden. These rules are designed to prevent overreacting to small-sample states or ranking states only by raw late-order volume. However, the thresholds should be treated as analytical decision rules, not universal business constants. In a real business setting, they should be reviewed with operations stakeholders and refreshed as order volume, SLA targets, and carrier performance change.
+
+* **Assumption 12: State-level results may hide more granular route, city, carrier, or seller patterns.**
+
+  The Customer Pain dashboard aggregates results by customer state to support strategic prioritization. However, delivery problems may be concentrated in specific cities, seller-state to customer-state lanes, carriers, product categories, or time periods. A state classified as high priority should therefore be treated as a starting point for deeper operational analysis, not the final root-cause diagnosis.
+
+* **Assumption 13: The analysis is based on historical Olist data and should not be interpreted as current Olist performance.**
+
+  The project uses a historical public dataset for portfolio and analytical demonstration purposes. The findings are valid for the available dataset and the assumptions used in this analysis, but they should not be interpreted as a statement about Olist's current logistics operations, current carrier network, or present-day customer experience.
