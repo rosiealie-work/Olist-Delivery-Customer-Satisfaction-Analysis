@@ -125,7 +125,7 @@ Throughout the analysis, several assumptions were made to keep the dataset metho
 
 * **Assumption 4: Late delivery is defined by missed delivery promise, not simply long delivery duration.**
 
- The late_flag is defined as promise_gap_day > 0, where promise_gap_day = actual delivered customer date - estimated delivery date. This means an order is considered late only when it arrives after the promised delivery date. Long lead time alone is not classified as late if the order still arrives within the estimated delivery promise. This definition is appropriate for customer satisfaction analysis because customers are more likely to react to missed promises than to delivery duration in isolation. 
+  The late_flag is defined as promise_gap_day > 0, where promise_gap_day = actual delivered customer date - estimated delivery date. This means an order is considered late only when it arrives after the promised delivery date. Long lead time alone is not classified as late if the order still arrives within the estimated delivery promise. This definition is appropriate for customer satisfaction analysis because customers are more likely to react to missed promises than to delivery duration in isolation. 
 
 * **Assumption 5: Geographic distance is an approximate proxy for delivery complexity.**
 
