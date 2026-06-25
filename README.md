@@ -51,9 +51,13 @@ The companies main database structure as seen below consists of four tables: tab
 
 ### Overview of Findings
 
-Across **94.4K** delivered orders with valid timestamps and review scores, Olist maintains a healthy average review score of **4.15**. However, **customer satisfaction drops sharply when orders miss the promised delivery date**. Late orders receive an average review score of **2.56**, compared with **4.29** for not-late orders, creating a **1.73-point** CSAT penalty. The main delivery-stage signal behind late orders is **carrier transit**, where the slowest orders show a much larger late-rate lift than seller handling or order approval. After adjusting carrier transit time for distance, package characteristics, timing, and seller state, the highest-priority customer pain is concentrated in specific states such as **Alagoas, Bahia, and Rio de Janeiro**.
+## Overview of Findings
 
-Below is the overview page from Power BI. The next two dashboard pages further break down the main delivery-performance factors behind late orders and identify which states experience the most severe delivery-related customer pain.
+Across **94.4K** delivered orders with valid timestamps and review scores, Olist maintains a generally healthy average review score of **4.15** and an overall late rate of **8.08%**. However, the analysis shows that customer satisfaction is highly sensitive to missed delivery promises. Not-late orders receive an average review score of **4.29**, while late orders drop sharply to **2.56**, creating a **1.73-point CSAT penalty**. The share of low ratings also increases substantially once an order is delivered late, indicating that late delivery is one of the clearest operational signals behind negative customer experience.
+
+The first dashboard page below focuses on this **CSAT impact**. It shows that review scores remain relatively strong when orders are delivered early or on time, but fall materially once orders miss the promised delivery date. The rating distribution also shifts sharply toward 1–2 star reviews among late orders, reinforcing that delivery reliability is not only an operations metric but also a direct customer experience issue. The next two dashboard pages extend this finding by identifying where the delivery problem appears to come from and where it creates the most operational pain. The Transit Driver page shows that **carrier transit** is the strongest delivery-stage signal associated with late orders, while the Customer Pain page uses model-adjusted residuals to prioritize states such as **Alagoas, Bahia, and Rio de Janeiro** for deeper logistics review.
+
+Below is the CSAT Impact overview page from Power BI. The next two dashboard pages further diagnose the delivery-stage bottleneck and regional customer pain behind these satisfaction patterns.
 
 <img width="1415" height="773" alt="Ảnh chụp màn hình 2026-06-06 163748" src="https://github.com/user-attachments/assets/bae2a945-3782-4be6-b422-b9805a61616a" />
 
