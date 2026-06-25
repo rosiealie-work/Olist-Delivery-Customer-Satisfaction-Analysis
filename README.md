@@ -162,7 +162,3 @@ Throughout the analysis, several assumptions were made to keep the dataset metho
 * **Assumption 12: State-level results may hide more granular route, city, carrier, or seller patterns.**
 
   The Customer Pain dashboard aggregates results by customer state to support strategic prioritization. However, delivery problems may be concentrated in specific cities, seller-state to customer-state lanes, carriers, product categories, or time periods. A state classified as high priority should therefore be treated as a starting point for deeper operational analysis, not the final root-cause diagnosis.
-
-* **Assumption 13: The analysis is based on historical Olist data and should not be interpreted as current Olist performance.**
-
-  The project uses a historical public dataset for portfolio and analytical demonstration purposes. The findings are valid for the available dataset and the assumptions used in this analysis, but they should not be interpreted as a statement about Olist's current logistics operations, current carrier network, or present-day customer experience.
